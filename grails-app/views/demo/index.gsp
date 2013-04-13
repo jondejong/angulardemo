@@ -10,6 +10,7 @@
     <div>
         Search: <input ng-model="query"/>
         Order By: <select ng-model="sort">
+        <option value="id">ID</option>
         <option value="name">Name</option>
         <option value="description">Description</option>
     </select>
