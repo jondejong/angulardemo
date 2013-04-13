@@ -23,14 +23,26 @@ html {
     box-sizing: border-box;
 }
 
+a {
+    color: black;
+    font-size: small;
+}
+
+thead {
+    font-weight: bold;
+}
+
 .header {
-    padding: 15px;
+    padding: 10px 0px 15px;
 }
 
 .header-link {
-    border: solid darkred;
+    display: inline;
+    border: thin solid darkred;
     padding: 5px;
-    margin: 10px;
+    margin: 0px;
+    height: 40px;
+    width: 300px;
 }
 
 .content {
