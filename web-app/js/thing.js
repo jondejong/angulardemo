@@ -13,4 +13,6 @@ function ThingListCtrl($scope) {
         {"name": "Awesome Thing™",
             "description": "Yet another sweet thing."}
     ];
+
+    $scope.sort = 'name';
 }
