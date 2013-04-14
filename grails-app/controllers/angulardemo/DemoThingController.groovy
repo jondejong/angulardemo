@@ -25,6 +25,10 @@ class DemoThingController {
         render DemoThing.get(params.id) as JSON
     }
 
+    def create() {
+        render new DemoThing() as JSON
+    }
+
     def update() {
 
     }

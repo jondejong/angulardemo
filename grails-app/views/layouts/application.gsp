@@ -25,7 +25,7 @@
     </div>
 
     <div class="header-link">
-        <a href="#">Add Thing</a>
+        <a href="#/create">Add Thing</a>
     </div>
 </div>
 
