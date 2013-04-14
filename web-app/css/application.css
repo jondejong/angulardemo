@@ -45,6 +45,13 @@ thead {
     width: 300px;
 }
 
+.dialog-content {
+    display: none;
+}
+
+.dialog-container {
+}
+
 .content {
     clear: both;
 }
