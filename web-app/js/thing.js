@@ -28,7 +28,7 @@ function ThingDetailCtrl($scope, $http, $routeParams, $location) {
     }
 }
 
-function NewThingCtrl($scope, $http, $routeParams, $location) {
+function NewThingCtrl($scope, $http, $location) {
     $http.get('/angulardemo/create/').success(function(data) {
         $scope.thing = data;
     });
