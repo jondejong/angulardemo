@@ -25,7 +25,7 @@ class BootStrap {
         new DemoThing(name: 'Fork', description: 'Plain old fork').save(failOnError: true)
         new DemoThing(name: 'Unstoppable Car', description: 'Why did we cut the brake lines?').save(failOnError: true)
         new DemoThing(name: 'Plastic fork', description: "pretty sefl-explanitory, but it's a fork, made of plastic.").save(failOnError: true)
-        new DemoThing(name: 'Purple fork', description: 'Yeah, why no?').save(failOnError: true)
+        new DemoThing(name: 'Purple fork', description: 'Yeah, why not?').save(failOnError: true)
     }
     def destroy = {
     }
