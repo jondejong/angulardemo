@@ -29,7 +29,6 @@ function ThingDetailCtrl($scope, $http, $routeParams, $location) {
 }
 
 function NewThingCtrl($scope, $http, $routeParams, $location) {
-    alert("bazing");
     $http.get('/angulardemo/create/').success(function(data) {
         $scope.thing = data;
     });
