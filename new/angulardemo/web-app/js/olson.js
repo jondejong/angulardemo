@@ -1,0 +1,1 @@
+var olsonModule = angular.module('olson', ['ui', 'scaffolding']);

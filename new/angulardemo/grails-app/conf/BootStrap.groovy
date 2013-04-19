@@ -3,8 +3,6 @@ import angulardemo.Program
 import grails.converters.JSON
 
 class BootStrap {
-
-
     def init = { servletContext ->
 
         JSON.registerObjectMarshaller(Program) { Program d ->

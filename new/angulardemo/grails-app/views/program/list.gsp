@@ -3,9 +3,8 @@
 <!DOCTYPE html>
 <html>
 	<body>
-		<a href="#list-program" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-		<div class="nav" role="navigation">
-
+		<div class="nav">
+            Hello From Program List!
 		</div>
 	</body>
 </html>

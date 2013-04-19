@@ -5,16 +5,9 @@ import org.codehaus.groovy.grails.commons.GrailsClass
 
 class ProgramController {
 
-    def grailsApplication
-
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
     def index() {
-
-        grailsApplication.controllerClasses.each {
-            GrailsClass g ->
-            println g.name
-        }
 
     }
 
