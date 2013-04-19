@@ -7,14 +7,14 @@ class BootStrap {
 
     def init = { servletContext ->
 
-        JSON.registerObjectMarshaller(DemoThing) { Program d ->
+        JSON.registerObjectMarshaller(Program) { Program d ->
             [
                     id: d.id,
                     name: d.name,
                     description: d.description
             ]
         }
-        JSON.registerObjectMarshaller(DemoThing) { Campaign c ->
+        JSON.registerObjectMarshaller(Campaign) { Campaign c ->
             [
                 id: c.id,
                 name: c.name,
