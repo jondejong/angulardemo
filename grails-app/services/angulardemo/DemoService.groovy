@@ -8,6 +8,7 @@ class DemoService {
             def thing = DemoThing.load(demoThing.id)
             thing.name = demoThing.name
             thing.description = demoThing.description
+            thing.dateOfThing = demoThing.dateOfThing
             thing.save()
         } else {
             demoThing.save()

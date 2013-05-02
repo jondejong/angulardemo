@@ -2,11 +2,9 @@ package angulardemo
 
 class ContentController {
 
-    def demoThingList() {
-        [layout: 'ajax']
+    def index() {
+        println "${params.domain}/${params.targetAction}"
+        render( view: "/${params.domain}/${params.targetAction}", model: [layout: 'ajax'] )
     }
 
-    def demoThingDetail() {
-        [layout: request.xhr ? 'ajax' : 'application']
-    }
 }

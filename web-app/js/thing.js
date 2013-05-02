@@ -2,9 +2,9 @@ var demo = angular.module('demo', ['ui']);
 
 demo.config(['$routeProvider', function($routeProvider) {
         $routeProvider.
-            when('/thinglist', {templateUrl: '/angulardemo/content/demoThingList',   controller: ThingListCtrl}).
-            when('/thing/:thingId', {templateUrl: '/angulardemo/content/demoThingDetail', controller: ThingDetailCtrl}).
-            when('/create', {templateUrl: '/angulardemo/content/demoThingDetail', controller: NewThingCtrl}).
+            when('/thinglist', {templateUrl: '/angulardemo/content/demothing/list',   controller: ThingListCtrl}).
+            when('/thing/:thingId', {templateUrl: '/angulardemo/content/demothing/edit', controller: ThingDetailCtrl}).
+            when('/create', {templateUrl: '/angulardemo/content/demothing/edit', controller: NewThingCtrl}).
             otherwise({redirectTo: '/thinglist'});
     }]);
 
@@ -34,6 +34,8 @@ function NewThingCtrl($scope, $http, $location) {
     });
 
     $scope.saveThing = function() {
+        console.log("Date of thing: ");
+        console.log($scope.thing.dateOfThing);
         $http.post('/angulardemo/demothing/', angular.toJson($scope.thing)).success(function(data){
             $location.path("/thinglist");
         });

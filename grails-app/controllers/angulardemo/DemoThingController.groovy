@@ -12,14 +12,12 @@ class DemoThingController {
         redirect(action: "list", params: params)
     }
 
-
     def list(Integer max) {
          if(params.id) {
             redirect(action: 'get', id: params.id)
         }
         render DemoThing.list(params) as JSON
     }
-
 
     def get() {
         render DemoThing.get(params.id) as JSON
@@ -34,12 +32,10 @@ class DemoThingController {
     }
 
     def save() {
-        def demoThing = new DemoThing(name: params.name, description: params.description)
+        def demoThing = new DemoThing(name: params.name, description: params.description, dateOfThing: Date.parse('MM/dd/yyyy', params.dateOfThing))
         if(params.id) {
             demoThing.id = params.id;
         }
-
-
 
         demoService.save(demoThing)
         render demoThing as JSON

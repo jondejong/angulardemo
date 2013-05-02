@@ -1,6 +1,11 @@
 class UrlMappings {
 
 	static mappings = {
+
+        "/content/$domain/$targetAction" (controller: 'content', action: 'index') {
+
+        }
+
         "/create" (controller: 'demoThing', action: 'create') {
 
         }
