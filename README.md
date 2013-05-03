@@ -1,0 +1,4 @@
+angulardemo
+===========
+
+Angular.js + Grails
